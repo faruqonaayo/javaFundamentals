@@ -18,6 +18,13 @@ public class WhileLoopExample {
 		while (!input.equals("quit")) {
 			System.out.println("Enter a message");
 			input = scanner.nextLine().toLowerCase();
+
+			if (input.equals("quit")) {
+				break;
+			}
+			if (input.equals("pass")) {
+				continue;
+			}
 			System.out.println(input);
 		}
 
